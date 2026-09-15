@@ -1,0 +1,91 @@
+ZEQAT SOFTWARE LICENSE
+
+Copyright (c) 2026 ZEQAT
+All rights reserved.
+
+1. OWNERSHIP
+
+The ZEQAT software, source code, architecture, security systems,
+documentation, designs, and associated materials are protected by
+applicable copyright and intellectual-property laws.
+
+Except where otherwise stated, all rights are reserved by ZEQAT.
+
+2. RESTRICTIONS
+
+Without prior written permission from ZEQAT, no person or organization
+may:
+
+- Copy the software for redistribution
+- Sell or sublicense the software
+- Publish modified versions
+- Create derivative commercial products
+- Redistribute substantial portions of the source code
+- Use the ZEQAT branding, trademarks, or identity as their own
+- Remove copyright or ownership notices
+
+3. VIEWING THE SOURCE CODE
+
+If this repository is publicly accessible, viewing the source code does
+not transfer ownership or grant permission to reproduce, distribute,
+modify, or commercially exploit the software.
+
+Public visibility of the repository does not mean that the software is
+open source.
+
+4. SECURITY RESEARCH
+
+Security researchers may inspect the publicly available code for
+legitimate security research, subject to the security-testing and
+responsible-disclosure requirements defined by ZEQAT.
+
+See:
+
+SECURITY.md
+
+5. THIRD-PARTY COMPONENTS
+
+Third-party software, libraries, frameworks, or other components
+included in or used by ZEQAT may be subject to their own licenses.
+
+Those licenses remain applicable to their respective components.
+
+6. TRADEMARKS AND BRANDING
+
+ZEQAT names, logos, designs, branding, and associated trademarks are
+not automatically licensed by this document.
+
+Permission to use third-party software does not grant permission to use
+ZEQAT branding.
+
+7. NO WARRANTY
+
+Unless otherwise required by applicable law, the software is provided
+without warranties of any kind.
+
+ZEQAT does not guarantee that the software is free from vulnerabilities,
+errors, or security defects.
+
+8. LIABILITY
+
+To the maximum extent permitted by applicable law, ZEQAT and its
+contributors are not responsible for damages resulting from the use,
+modification, or distribution of the software without authorization.
+
+9. LICENSE CHANGES
+
+ZEQAT may change the licensing terms for future versions of the
+software.
+
+Previous versions remain subject to the license terms applicable to
+those versions unless otherwise stated.
+
+10. PERMISSION REQUESTS
+
+Requests for permissions not granted by this license should be made
+directly to ZEQAT.
+
+11. COPYRIGHT
+
+Copyright (c) 2026 ZEQAT
+All rights reserved.
