@@ -1,265 +1,284 @@
 # ZEQAT
 
-ZEQAT is a privacy-focused communication and identity platform designed around
-privacy, user-controlled identity, secure communication, and protected data.
+## Secure Communication & Privacy Infrastructure
 
-## About ZEQAT
+ZEQAT is a privacy-focused communication and identity infrastructure project designed around user-controlled identity, secure authentication, protected data storage, and privacy-oriented communication.
 
-ZEQAT uses a privacy-oriented identity model designed to reduce reliance on
-traditional phone-number-based identification.
-
-The platform uses:
-
-- Public display usernames
-- Private `zq-username`
-- ZQID identifiers
-- QR-based device authentication
-- Secure account recovery
-- Protected messaging
-- Voice communication
-- Trusted devices
-- Account security controls
-- Protected file and vault functionality
-
-ZEQAT is designed with privacy and user control as core principles.
+The project explores an identity model that does not require users to rely on conventional phone-number-based identification.
 
 ---
 
-## Identity System
-
-ZEQAT separates a user's public identity from their private login identity.
-
-### Display Username
-
-The display username is the identity that may be visible to other users.
-
-### Private zq-username
-
-The `zq-username` is intended to remain private to the account owner.
-
-It is used as part of the account authentication and recovery system.
+## Core Concepts
 
 ### ZQID
 
-A ZQID is a numeric identifier associated with a ZEQAT account.
+ZEQAT uses a unique numerical identifier called **ZQID**.
 
-Users can use a known ZQID to connect with another ZEQAT user without requiring
-the user's phone number to be publicly searchable.
+ZQID is designed to provide an alternative way for users to identify and connect with one another without exposing conventional personal identifiers.
+
+### ZQ-Username
+
+ZEQAT uses two different username concepts:
+
+- **Display Username** — the username visible to other users.
+- **ZQ-Username** — a private username intended for account authentication and account-related security operations.
+
+The ZQ-Username is designed to remain private and should not be treated as a public identifier.
 
 ---
 
-## Security Architecture
+## Authentication
 
-ZEQAT is designed with multiple security mechanisms, including:
+ZEQAT is designed around application-first authentication.
 
-- Account authentication
-- Password protection
-- Recovery phrase protection
-- Optional six-digit security PIN
+Security-related authentication concepts include:
+
+- Private ZQ-Username
+- Password authentication
+- Recovery phrase
+- QR-based desktop authentication
+- Trusted devices
+- Optional PIN protection
 - Account lock mechanisms
-- Trusted-device controls
-- QR-based PC authentication
-- Session protection
-- CSRF protection
-- XSS protection
-- SQL injection protection
-- Brute-force protection
-- Bot and suspicious-access detection
-- Protected vault functionality
-- Account logout and deletion controls
+- Session and device controls
 
-Security mechanisms may differ between versions and deployments.
-
-Security features described here should not be interpreted as a guarantee that
-ZEQAT is impossible to compromise.
-
-No software can provide an absolute guarantee of security.
+Desktop authentication is designed to allow a trusted mobile device to authorize a desktop session through QR-based authentication.
 
 ---
 
-## PC Login
+## Privacy & Security Architecture
 
-ZEQAT supports a PC/Desktop authentication workflow using a QR code generated
-or displayed by the desktop login system.
+ZEQAT is designed with privacy and security as core architectural principles.
 
-The mobile application can be used to authenticate the desktop session.
+The project includes documentation covering areas such as:
 
-This design reduces the need to enter account credentials directly into a
-desktop browser.
+- Security architecture
+- Threat modeling
+- Cryptography
+- Encrypted storage
+- Authentication
+- Secure file sharing
+- Security testing
+- Security advisories
+- Privacy architecture
+
+Security documentation is available throughout this repository.
+
+---
+
+## Encrypted Storage
+
+ZEQAT includes protected storage concepts designed to prevent unauthorized access to stored information.
+
+The project includes documentation covering:
+
+- Encrypted data
+- Protected vault storage
+- Secure file handling
+- Recovery mechanisms
+- Data protection architecture
+
+---
+
+## Secure File Sharing
+
+ZEQAT includes a secure file-sharing architecture based on controlled sharing mechanisms.
+
+The system is designed to support protected sharing of files and information while minimizing unnecessary exposure of user data.
 
 ---
 
 ## Communication
 
-ZEQAT provides communication functionality intended for ZEQAT users.
+ZEQAT is designed to support privacy-oriented communication between users.
 
-Depending on the deployed version, functionality may include:
+The project architecture includes concepts for:
 
-- Person-to-person messaging
+- User-to-user messaging
+- Secure communication
 - Voice communication
-- Friend management
-- QR-based connections
-- ZQID-based connections
-- Group communication
-- Rooms for external-platform communication workflows
-
-Availability of individual features depends on the current ZEQAT release.
+- Identity-based connections
+- Privacy-focused sessions
 
 ---
 
-## Groups
+## Groups & Rooms
 
-ZEQAT supports group communication.
+ZEQAT includes different communication concepts for users, groups, and rooms.
 
-Group limits may depend on the subscription level and the current deployment.
-
----
-
-## Rooms
-
-ZEQAT Rooms are separate from ordinary groups.
-
-Rooms are designed for controlled communication workflows involving external
-platforms and users.
-
-Rooms may support additional authentication mechanisms such as:
+Rooms are intended to provide controlled communication environments and may support authentication mechanisms such as:
 
 - PINs
 - Passwords
 - Tokens
 
-Room limits and functionality depend on the applicable ZEQAT plan.
+The exact capabilities and limits may depend on the implementation and service configuration.
 
 ---
 
-## Secure Files and Vault
+## Security Documentation
 
-ZEQAT includes protected file-management functionality.
+This repository contains technical documentation covering multiple parts of the ZEQAT architecture.
 
-Depending on the deployment, users may have access to:
+Relevant documents include:
 
-- Vault
-- Images
-- Documents
-- Sharing
-- Backup
-- Archive
+- `AUTHENTICATION_SPECIFICATION.md`
+- `CRYPTOGRAPHY.md`
+- `ENCRYPTED_STORAGE.md`
+- `PRIVACY_ARCHITECTURE.md`
+- `SECURE_FILE_SHARING.md`
+- `SECURITY.md`
+- `SECURITY_ARCHITECTURE.md`
+- `SECURITY_TESTING.md`
+- `SECURITY_ADVISORIES.md`
+- `THREAT_MODEL.md`
+- `ZQID_SPECIFICATION.md`
+- `ZQ_BLOCKCHAIN.md`
 
-File-sharing workflows may use temporary sharing tokens and additional
-authentication requirements.
-
----
-
-## Privacy Principles
-
-ZEQAT is designed around the following principles:
-
-1. Minimize unnecessary identity exposure.
-2. Separate public identity from private authentication information.
-3. Give users control over account security.
-4. Avoid unnecessary third-party identity dependencies.
-5. Provide user-controlled account and data-management functionality.
-6. Protect sensitive information through appropriate security mechanisms.
+These documents describe the intended architecture, security concepts, specifications, and technical considerations of the project.
 
 ---
 
-## Open Source
+## Open Source Scope
 
-ZEQAT may contain open-source components and repositories released under the
-Apache License 2.0.
+ZEQAT is developed as a project containing both publicly released materials and components that may remain private.
 
-The Apache License applies only to the source code and components that are
-actually distributed under that license.
+**Not every component of the ZEQAT service is necessarily open source.**
 
-Unless explicitly stated otherwise, the following are NOT automatically
-licensed under Apache-2.0 merely because they are associated with this
-repository:
+The Apache License 2.0 applies only to the portions of this repository that are explicitly released under that license.
 
-- Private production infrastructure
-- Private server configuration
-- Private databases
-- Private credentials
-- Deployment secrets
-- Third-party services
-- Third-party libraries under their own licenses
-- Unpublished ZEQAT source code
-- Proprietary assets
-- Trademarks and logos
-
-For the exact scope of the open-source release, see the files and directories
-included in this repository.
+Private production infrastructure, server-side systems, credentials, secrets, deployment configurations, and unreleased source code are not automatically included in the open-source release.
 
 ---
 
 ## License
 
-Unless otherwise stated in a specific file or directory, the source code
-distributed in this repository is licensed under the Apache License, Version
-2.0.
+Portions of this repository are distributed under the:
 
-See:
+**Apache License, Version 2.0**
 
-`LICENSE`
+See [`LICENSE`](LICENSE) for the full license text.
 
-for the complete license text.
+See [`NOTICE`](NOTICE) for attribution and branding information.
+
+See [`COPYRIGHT.md`](COPYRIGHT.md) for additional copyright information.
+
+The Apache License 2.0 applies only to the portions of this repository that are explicitly distributed under that license.
+
+---
+
+## Trademarks & Branding
+
+The name **ZEQAT**, the ZEQAT logo, product names, service names, visual identity, and associated branding are not licensed under the Apache License 2.0 unless explicitly stated otherwise.
+
+The Apache License grants rights to applicable copyrighted material; it does not automatically grant trademark rights.
+
+See [`NOTICE`](NOTICE) for additional information.
 
 ---
 
 ## Third-Party Software
 
-ZEQAT may use third-party libraries, frameworks, services, or other software.
+ZEQAT may interact with, include, or depend upon third-party software, libraries, frameworks, services, or other technologies.
 
-Third-party software remains subject to its respective license.
+Third-party components remain subject to their respective licenses and terms.
 
-Users and contributors are responsible for reviewing the applicable licenses
-for third-party components.
-
-Additional attribution information may be provided in:
-
-`NOTICE`
+Users and contributors should review the applicable license information for each third-party component before redistributing or modifying it.
 
 ---
 
-## Security Vulnerabilities
+## Security
 
-If you discover a security vulnerability in the publicly released ZEQAT
-source code, please report it responsibly.
+Security issues should not be publicly disclosed through ordinary GitHub issues when they could expose sensitive information.
 
-Do not publicly disclose a vulnerability before the maintainers have had a
-reasonable opportunity to investigate and address it.
+Please review [`SECURITY.md`](SECURITY.md) for information about reporting security vulnerabilities.
 
-See:
-
-`SECURITY.md`
-
-for security-reporting information.
+Security research, testing, and responsible disclosure are important parts of the ZEQAT project.
 
 ---
 
 ## Contributions
 
-Contributions are welcome for the parts of ZEQAT that are released under an
-open-source license.
+Contributions may be accepted for components that are explicitly released for contribution.
 
-Before submitting a contribution, please read:
+Before submitting a contribution, please review:
 
-`CONTRIBUTING.md`
+- [`LICENSE`](LICENSE)
+- [`NOTICE`](NOTICE)
+- [`COPYRIGHT.md`](COPYRIGHT.md)
+- [`SECURITY.md`](SECURITY.md)
 
-Contributors should ensure that submitted code does not contain:
-
-- Passwords
-- API keys
-- Private tokens
-- Database credentials
-- Personal information
-- Production secrets
-- Private server configuration
+Contributors should not submit passwords, private keys, API credentials, production secrets, personal information, or other sensitive data.
 
 ---
 
 ## Development
 
-Clone the repository:
+ZEQAT contains architectural specifications and technical documentation intended to describe the project's security, identity, privacy, and communication concepts.
 
-```bash
-git clone https://github.com/zeqat/REPOSITORY.git
+Development and deployment environments may differ from the public repository.
+
+Production credentials and private infrastructure should never be committed to this repository.
+
+---
+
+## Responsible Security Research
+
+ZEQAT welcomes responsible security research intended to identify vulnerabilities and improve the security of the project.
+
+Researchers should avoid:
+
+- Accessing accounts without authorization
+- Accessing private user data
+- Destroying or modifying data
+- Disrupting production services
+- Obtaining or exposing credentials
+- Performing actions that could harm users or infrastructure
+
+Please follow the responsible disclosure process described in [`SECURITY.md`](SECURITY.md).
+
+---
+
+## Disclaimer
+
+ZEQAT is provided subject to the applicable license and project terms.
+
+No guarantee is made that the software, architecture, documentation, or security mechanisms are completely free from vulnerabilities.
+
+Security features described in documentation represent the project's intended architecture or implementation and should not be interpreted as a guarantee of absolute security.
+
+Users are responsible for evaluating whether the software is appropriate for their intended use.
+
+---
+
+## Project
+
+**ZEQAT**
+
+Secure Communication & Privacy Infrastructure
+
+Copyright © 2026 ZEQAT.
+
+---
+
+## Repository Structure
+
+```text
+ZEQAT/
+├── README.md
+├── LICENSE
+├── NOTICE
+├── COPYRIGHT.md
+├── SECURITY.md
+├── AUTHENTICATION_SPECIFICATION.md
+├── CRYPTOGRAPHY.md
+├── ENCRYPTED_STORAGE.md
+├── PRIVACY_ARCHITECTURE.md
+├── SECURE_FILE_SHARING.md
+├── SECURITY_ADVISORIES.md
+├── SECURITY_ARCHITECTURE.md
+├── SECURITY_TESTING.md
+├── THREAT_MODEL.md
+├── ZQID_SPECIFICATION.md
+├── ZQ_BLOCKCHAIN.md
+└── ...
